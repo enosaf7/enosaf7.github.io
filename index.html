@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Enoch - Data Analyst specializing in Python, SQL, and Visualization.">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://your-portfolio-url.com/"> <meta property="og:title" content="Enoch | Data Analyst Portfolio">
+        <meta property="og:description" content="I help make sense of messy data. Check out my projects in SQL, Python, and PowerBI.">
+        <meta property="og:image" content="images/og-image.png">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://your-portfolio-url.com/">
+        <meta property="twitter:title" content="Enoch | Data Analyst Portfolio">
+        <meta property="twitter:description" content="I help make sense of messy data. Check out my projects.">
+        <meta property="twitter:image" content="images/og-image.png">
+
+        <link rel="icon" type="image/png" href="icons/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navBar">
+            <div class="logo">Enoch's Portfolio</div>
+            <!-- hamburger button -->
+             <button class="hamburger" aria-label="Toggle navigation">
+               <img src="icons/hamburger.png" alt="Menu" class="hamburger-icon">
+            </button>
+            <ul class="nav-links">
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv"><img src ="icons/file-download.png" class="file-download"></a></li>
+            </ul>
+        </nav>
+        <header class="parallax-section" data-speed="0.08">
+            <div class="herosection parallax">
+                <div class="hero-text" data-speed="0.25">
+                    <span><h1 class="Intro-message">
+                        Because data is too important and mostly comes messy, I help make sense of it.🔥
+                    </h1><br />
+                    <span class="subtext">Hi, I'm <span class="name">Enoch.</span> A Data Analyst passionate about transforming raw data into meaningful insights to drive informed decision-making.</span>
+                    </span>
+                    <div class="contact">
+                        <ul>
+                            <li>
+                                <a href="tel:+233 59 676 0174"><img src="icons/phone-call.png" class="contact-icons"></a> 
+                            </li>
+                            <li>
+                                <a href="mailto:enosaf7@gmail.com"><img src="icons/email.png" class="contact-icons"></a>
+                            </li>
+                            <li>
+                                <a href="https://enoch.osafo.linked.in"><img src="icons/linkedin.png" class="contact-icons"></a>
+                            </li>
+                            <li>
+                                <a href="https://enosaf7.github.io"><img src="icons/github.png" class="contact-icons"></a>
+                            </li>
+              
+                              </ul>
+                    </div>
+                </div>
+                <div class="hero-image" data-speed="0.6">
+                    <img src="images/hero-image.png" alt="Hero Image">
+            </div>
+        </header>
+        <main class="parallax-section" data-speed="0.05">
+            <section id="aboutMe" class="aboutMe parallax-item" data-speed="0.07">
+                <h2>3 reasons to choose me</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="icons/skill.png" alt="Skill Icon 1">
+                        <h3>Problem Solving Skills</h3>
+                        <p>Proficient in cleaning and preprocessing messy datasets to ensure accuracy and reliability.</p>
+                    </div>
+                    <div class="card">
+                        <img src="icons/communication.png" alt="Skill Icon 2">
+                        <h3>Good Communication Skills</h3>
+                        <p>Strong analytical skills to extract meaningful insights from complex data sets.</p>
+                    </div>
+                    <div class="card">
+                        <img src="icons/problem-solving.png" alt="Skill Icon 3">
+                        <h3>Effective Communication</h3>
+                        <p>Adept at presenting data findings in a clear and concise manner to stakeholders.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills parallax-item" data-speed="0.06">
+                <h2>Skills</h2>
+                <!-- tabular display of skills on left and tools on the right-->
+                <div class="skills-container">
+                    <div class="skills-list">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>Data Cleaning & Preprocessing</li>
+                            <li>Statistical Analysis</li>
+                            <li>Data Visualization</li>
+                            <li>SQL & Database Management</li>
+                            <li>Excel & Advanced Formulas</li>
+                        </ul>
+                    </div>
+                    <div class="tools-list">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                            <li>R Programming</li>
+                            <li>Power BI</li>
+                            <li>Microsoft Excel & Google Sheets</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="projects parallax-item" data-speed="0.065">
+                <h2>Projects</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/project1.png" alt="Project 1">
+                        <h3>Sales Data Analysis</h3>
+                        <p>Analyzed sales data to identify trends and provide actionable insights for business growth.</p>
+                        <div class="btn-container">
+                            <a href="#" class="btn-project btn-code" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/project2.png" alt="Project 2">
+                        <h3>Customer Segmentation</h3>
+                        <p>Developed customer segmentation models to enhance targeted marketing strategies.</p>
+                        <div class="btn-container">
+                            <a href="#" class="btn-project btn-code" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/project3.png" alt="Project 3">
+                        <h3>Financial Reporting Dashboard</h3>
+                        <p>Created interactive dashboards to visualize financial performance metrics for stakeholders.</p>
+                        <div class="btn-container">
+                            <a href="#" class="btn-project btn-code" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="certificates" class="certificates" data-speed="0.08">
+                <div class="card-container">
+                    <h2>Certificates</h2>
+                    <div class="card">
+                        <img src="images/cert1.png" alt="certificate in Data Analytics">
+                        <h3>Certificate of completion of Data Analytics course with ALX</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact-section parallax-item" data-speed="0.09">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/mbllyrla" method="POST" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enoch Osafo">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="enosaf7@gmail.com">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="your message here.."></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>  
+        <footer>
+            <div class="footer-content" data-speed="0.09">
+                <h3>Connect with me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/YOUR_USERNAME" target="_blank" aria-label="GitHub">
+                        <img src="icons/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" aria-label="LinkedIn">
+                        <img src="icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:enosaf7@gmail.com" aria-label="Email">
+                        <img src="icons/email.png" alt="Email">
+                    </a>
+                </div>
+                <p>&copy; 2025 Enoch's Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+        </main>
+        
+    </body>
+</html>
