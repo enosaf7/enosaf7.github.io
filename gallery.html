@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enoch | Achievements Vault</title>
+        <meta name="description" content="A collection of certificates, hackathon wins, and speaking events.">
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        
+        <script src="script.js" defer></script>
+        <link rel="icon" type="image/png" href="icons/favicon.png">
+    </head>
+    <body>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <nav class="navBar">
+            <div class="logo">Enoch.Data</div>
+            
+            <button class="hamburger" aria-label="Toggle navigation">
+            <img src="icons/hamburger.png" alt="Menu" class="hamburger-icon">
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="gallery.html" style="color: #01ff0e;">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li>
+                    <a href="#" id="cv-trigger" aria-label="Resume Options">
+                        <img src="icons/file-download.png" class="file-download" alt="CV">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="gallery-section">
+                <h1 class="gallery-title">The Vault</h1>
+                <p class="gallery-subtitle">A collection of wins, certifications, and moments.</p>
+
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="certificate">Certificates</button>
+                    <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+                    <button class="filter-btn" data-filter="speaking">Speaking</button>
+                </div>
+
+                <div class="gallery-grid">
+                    
+                    <div class="gallery-item" data-category="certificate">
+                        <img src="images/cert1.png" alt="ALX Data Analytics">
+                        <div class="overlay">
+                            <h3>ALX Data Analytics</h3>
+                            <p>Professional Certification</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="certificate">
+                        <img src="images/cert2.png" alt="ALX Professional Foundations">
+                        <div class="overlay">
+                            <h3>ALX Professional Foundations Program</h3>
+                            <p>Professional Certification</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="images/hack1.png" alt="Hackathon Win">
+                        <div class="overlay">
+                            <h3>Hackathon Winner</h3>
+                            <p>1st Place - Disability Inclusive Hackathon'25</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="images/hack3.png" alt="Hackathon Win">
+                        <div class="overlay">
+                            <h3>Hackathon Winner</h3>
+                            <p>Team SMaRTi placed 1st @Disability Inclusive Hackathon'25</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="certificate">
+                        <img src="images/cert6.png" alt="Innovations Fair '25">
+                        <div class="overlay">
+                            <h3>Certificate of Participation</h3>
+                            <p>1st place - Innovation and Career Fair'25 (UMaT)</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hackathon">
+                        <img src="images/hack2.png" alt="Innovation Day">
+                        <div class="overlay">
+                            <h3>Innovation And Career Fair'25</h3>
+                            <p>1st Place - Innovation and Career Fair'25 (UMaT)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div id="lightbox-caption"></div>
+            </div>
+        </main>
+        <div id="cv-choice-modal" class="modal-overlay">
+            <div class="cv-choice-box">
+                <span class="close-cv-btn">&times;</span>
+                <h3>Resume Options</h3>
+                <p>Would you like to download the file or view it here?</p>
+                <div class="cv-buttons">
+                    <button id="btn-view-cv" class="btn-cv-action">👀 Preview</button>
+                    <a href="documents/Enoch_CV.pdf" download="Enoch_CV.pdf" class="btn-cv-action btn-download">⬇ Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="cv-preview-modal" class="modal-overlay">
+            <div class="cv-preview-box">
+                <span class="close-preview-btn">&times;</span>
+                <iframe src="" id="cv-iframe" title="CV Preview"></iframe>
+            </div>
+        </div>
+    </body>
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">⬆</button>
+</html>
